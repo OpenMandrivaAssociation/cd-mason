@@ -40,10 +40,6 @@ mkdir -p %buildroot/%_datadir/%name
 cp src/*.svg src/*.png %buildroot/%_datadir/%name/
 
 #menu
-mkdir -p $RPM_BUILD_ROOT%{_menudir}
-cat << EOF > $RPM_BUILD_ROOT%{_menudir}/%{name}
-?package(%{name}): command="%{name}" icon="%{name}.png" needs="x11" title="CD-Mason" longtitle="Simple, powerful CD burning" section="System/Archiving/CD Burning" xdg="true"
-EOF
 
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}.desktop << EOF
@@ -81,7 +77,6 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS ChangeLog NEWS README TODO
 %{_bindir}/%name
 %{_datadir}/%name
-%{_menudir}/%name
 %{_datadir}/applications/mandriva-%{name}.desktop
 %{_liconsdir}/%name.png
 %{_iconsdir}/%name.png
