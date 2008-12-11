@@ -13,7 +13,7 @@ URL:		http://cd-mason.berlios.de/
 License:	GPL
 Group:		Archiving/Cd burning
 BuildRoot:	%{_tmppath}/%{name}-buildroot
-BuildRequires:	pkgconfig ImageMagick
+BuildRequires:	pkgconfig imagemagick
 BuildRequires:	libgnome-vfs2-devel gtk2-devel
 Requires:	cdrecord mkisofs madplay vorbis-tools
 
