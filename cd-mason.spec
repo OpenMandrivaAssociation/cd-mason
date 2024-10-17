@@ -9,7 +9,7 @@ Release: 	%{release}
 
 Source:		%{name}-%{version}.tar.bz2
 Patch:		%{name}-0.1-datadir.patch.bz2
-URL:		http://cd-mason.berlios.de/
+URL:		https://cd-mason.berlios.de/
 License:	GPL
 Group:		Archiving/Cd burning
 BuildRoot:	%{_tmppath}/%{name}-buildroot
