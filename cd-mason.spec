@@ -1,6 +1,6 @@
 %define name	cd-mason
 %define version	0.1
-%define release %mkrel 5
+%define release 6
 
 Name: 	 	%{name}
 Summary: 	Simple CD burning interface for GNOME
